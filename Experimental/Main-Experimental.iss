@@ -78,7 +78,7 @@ begin
     False, False);
   RemoveSettingsPage.Add('Delete WTF Directory');
   RemoveSettingsPage.Add('Delete Addon Directory');
-  
+
   RemoveSettingsPage.Values[0] := True;
   RemoveSettingsPage.Values[1] := True;
 end;

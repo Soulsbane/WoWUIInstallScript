@@ -1,0 +1,36 @@
+This is an install script written for the wonderful Inno Setup. In order to use this script you must go to http://www.jrsoftware.org/isdl.php and download Inno Setup.
+
+***IMPORTANT NOTE********************************************************************************************************************
+If you have a new WoW install or you moved your WoW directory make sure to run WoW at least once before trying to compile this script otherwise it will error on you.
+You will also get an error if you try to run the resulting executable on your friends computer and they have a fresh install or had just moved WoW to a different directory.
+*************************************************************************************************************************************
+
+Steps:
+
+1) Go to http://www.jrsoftware.org/isdl.php and download the QuickStart Pack. It's midway down the page. The reason for the QuickStart Pack is it includes the preprocessor that this script uses for some of it's magic.
+2) Once you've downloaded the QuickStart Pack install it of course! It will ask you if you want to install the preprocessor. It will have a checkbox at the bottom that says Install Inno Setup Preprocessor.
+2a) Note that there are other things the Quickstart pack will ask you to install(Istool, encryption support). That's up to you. All you need is the preprocessor.
+3) Once you've installed everything just right-click the Main.iss included in the zip and choose "compile". This will automatically find your WoW install directory and compile an executable that contains your WTF files and Addons folders.
+3a) If you don't get the option to compile then you need to open Inno Setup Installer in your start menu and in the options screen click associate .iss files with Inno Setup.
+4) The compilation step will take some time depending upon how many addons you have :) After it is finished you can run it.
+5) The installer will automatically find your WoW install directory and install your WTF and Addons in the appropriate directories.
+
+If you get an error during compile or when running the setup then you didn't read the important note at the start of the instructions!
+
+Some notes:
+-If it can't find the registry value where WoW is installed it won't go any futher and will give you an error dialog and quit.
+-I've built in options that you can select in the installer to delete your WTF and Addons directory before installing the files. These are enabled by default.
+-PLEASE, PLEASE, PLEASE read the Inno Setup instructions before making changes to the script. I've tested it to the best of my abilities and if you change the code around you can really mess your system up potentially.
+
+Cosmetic Changes:
+There are some cosmetic changes you can make though. Anything inside the quotes can be changed to whatever you want. Just don't modify anything else.
+
+;#define MyAppName "WoW UI Installer"
+;#define MyAppVerName "WoW UI Installer 1.0"
+;#define MyAppPublisher "Azerothsoft"
+;#define WizardImageLarge "Main.bmp"
+;#define WizardImageSmall "Main-Small.bmp"
+;#define ExecutableName "WoWUIInstaller"
+
+The semicolon in front of the define means it is commented out. In other words it is ignored. If you want to use custom images instead of the default Inno Setup ones you need to remove the semicolon and change the values inside the quotes to the location where your images are stored.
+1.1 Important Change - All defines are now commented out. So if you want to use anything other than default you will have to remove the semicolon and edit it to suit your needs.

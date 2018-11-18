@@ -2,8 +2,8 @@
 ;#define MyAppName "WoW UI Installer"
 ;#define MyAppVerName "WoW UI Installer 1.0"
 ;#define MyAppPublisher "Azerothsoft"
-;#define WizardImageLarge "Main.bmp"
-;#define WizardImageSmall "Main-Small.bmp"
+;#define WizardImageLarge "Images\Main.bmp"
+;#define WizardImageSmall "Images\Main-Small.bmp"
 ;#define ExecutableName "WoWUIInstaller"
 
 ;Here you can modify what error messages say

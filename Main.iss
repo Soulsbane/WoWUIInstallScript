@@ -10,8 +10,6 @@
 #define WoWDirNotFoundError "Your World of Warcraft directory could not be found!. Please run World of Warcraft at least once then run this installer again!"
 
 ; DON'T CHANGE ANYTHING BELOW HERE IF YOU DON'T KNOW WHAT YOUR DOING
-; DON'T CHANGE ANYTHING BELOW HERE IF YOU DON'T KNOW WHAT YOUR DOING
-; DON'T CHANGE ANYTHING BELOW HERE IF YOU DON'T KNOW WHAT YOUR DOING
 
 #define WoWLocalInstallDir ReadReg(HKEY_LOCAL_MACHINE, "SOFTWARE\Blizzard Entertainment\World of Warcraft", "InstallPath", "Not Found")
 #define WoWLocalAddonDir ReadReg(HKEY_LOCAL_MACHINE, "SOFTWARE\Blizzard Entertainment\World of Warcraft", "InstallPath") + "Interface\Addons"

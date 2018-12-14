@@ -54,8 +54,8 @@ SolidCompression=yes
 Uninstallable=no
 
 [Files]
-Source: "{#WoWLocalWTFDir}\*.*"; DestDir: "{code:GetWoWDir}\WTF"; Flags: ignoreversion recursesubdirs
-Source: "{#WoWLocalAddonDir}\*.*"; DestDir: "{code:GetWoWDir}\Interface\Addons"; Flags: ignoreversion recursesubdirs
+Source: "{#WoWLocalWTFDir}\*.*"; DestDir: "{code:GetWoWDir}\_retail_\WTF"; Flags: ignoreversion recursesubdirs
+Source: "{#WoWLocalAddonDir}\*.*"; DestDir: "{code:GetWoWDir}\_retail_\Interface\Addons"; Flags: ignoreversion recursesubdirs
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
